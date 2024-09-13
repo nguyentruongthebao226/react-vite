@@ -1,11 +1,16 @@
 
+import { useState } from "react"
+
+
 const TodoNew = () => {
+
+    const [valueInput, setValueInput] = useState('TheBao')
     const handleClick = () => {
-        alert("click me")
+        console.log("Check onclick: ", valueInput)
     }
 
     const handleOnChange = (name) => {
-        console.log(name)
+        setValueInput(name)
     }
 
     return (
