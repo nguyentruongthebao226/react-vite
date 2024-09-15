@@ -7,7 +7,7 @@ const TodoData = (props) => {
             {
                 todoList.map((cur, acc) => {
                     return (
-                        <div className="todo-item">
+                        <div className={`todo-item ${acc}`} key={acc}>
                             <div>{cur.name}</div>
                             <button>Delete</button>
                         </div>
@@ -15,12 +15,6 @@ const TodoData = (props) => {
                     )
                 }, [])
             }
-            {/* <div>My name is {name}</div>
-            <div>Learning React</div>
-            <div>Watching Youtube</div>
-            <div>
-                {JSON.stringify(todoList)}
-            </div> */}
         </div>
     )
 }
