@@ -1,8 +1,8 @@
 
-const ProductPage = () => {
+const BookPage = () => {
     return (
         <div>Đây là trang product</div>
     )
 }
 
-export default ProductPage
+export default BookPage
